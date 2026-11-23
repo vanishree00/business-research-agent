@@ -1,8 +1,9 @@
 import os
+import time
 from dotenv import load_dotenv
 from google import genai
 from tavily import TavilyClient
-import time
+
 
 # Load API keys
 load_dotenv()
@@ -83,7 +84,7 @@ Search Results:
         except Exception as e:
             if "503" in str(e) or "UNAVAILABLE" in str(e):
                 print(f"Gemini is busy. Retrying ({attempt + 1}/3)...")
-                time.sleep(5)
+                time.sleep(10)
             else:
                 raise
 
