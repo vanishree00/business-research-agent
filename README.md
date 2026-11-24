@@ -114,4 +114,4 @@ Example:
 
 ## Author
 
-Developed as part of the NEXLEVER Agentic AI Developer Intermediate Tasks.
+Developed as part of the [NEXLEVR](https://github.com/Nexlevr). Agentic AI Developer Intermediate Tasks.
